@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUIZ</title>
+  </head>
+  <body>
+    <h1>クイズだよ</h1>
+    <h2>みなしょーさんが好きな食べ物はなんでしょう</h2>
+    <button id="ch1">豆腐</button>
+    <button id="ch2">わんこそば</button>
+    <button id="ch3">ナッツ</button>
+    <display id="aori"> 答えは何かなああ？？？</display>
+
+    <script>
+      const choice1 = document.getElementById("ch1")
+      const choice2 = document.getElementById("ch2")
+      const choice3 = document.getElementById("ch3")
+      const display = document.getElementById("aori")
+
+      choice1.onclick = function () {
+        display.textContent =
+          "残念、、、！答えは寿司！盛岡は豆腐消費ランキング全国1位だけどね、、、！"
+      }
+
+      choice2.onclick = function () {
+        display.textContent =
+          "惜しい、、、！答えは寿司！盛岡わんこそば有名だけどね！日本食であることには違いない！"
+      }
+
+      choice3.onclick = function () {
+        display.textContent =
+          "正解！！！ではない、、、！答えは寿司！ナッツは食べるのは好きじゃなくて趣味らしいよ"
+      }
+    </script>
+  </body>
+</html>
