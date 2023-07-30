@@ -5,3 +5,7 @@ git add .
 git commit -m "コミット"
 git push origin master
 ```
+
+git add .
+git commit -m "ポートフォリオサイトの開発を進めました"
+git push origin master
