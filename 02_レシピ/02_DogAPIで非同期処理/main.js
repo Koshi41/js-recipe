@@ -1,0 +1,13 @@
+const imageElement = document.getElementById("dog-image")
+
+// 指定したサーバーにデータを取りに行く
+fetch("https://dog.ceo/api/breeds/image/random")
+  .then((res) => {
+    console.log(res)
+    return res.json() // 結果を json として読み込んで、次の then に渡す
+  })
+  .then((data) => {
+    console.log(data)
+    console.log(data.massage)
+    imageElement.src = data.message // 画像を表示する
+  })
